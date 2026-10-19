@@ -21,11 +21,13 @@ python jsonl2md.py session.jsonl out.md --full
 ----
 # 基本用法
 1. 准备好jsonl，输出到同目录，生成同名.md
-python jsonl2md.py session.jsonl
+`python jsonl2md.py session.jsonl`
 
 2. 指定输出路径
-python jsonl2md.py session.jsonl 我的对话.md
+`python jsonl2md.py session.jsonl 我的对话.md`
 
-3. 完整导出，不截断工具结果
+3. 完整导出，不截断工具结果。`--full`参数放在任意位置都可以
+```python
 python jsonl2md.py session.jsonl --full
-python jsonl2md.py session.jsonl out.md --full   # --full 参数放在任意位置都可以
+python jsonl2md.py session.jsonl out.md --full
+```
